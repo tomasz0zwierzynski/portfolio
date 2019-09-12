@@ -83,6 +83,10 @@
   animation-duration: 1.5s;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
