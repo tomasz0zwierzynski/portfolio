@@ -230,7 +230,16 @@
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Platforma Stewarta - Ball on Plate</h3>
             <div class="subheading mb-3">Projekt uczelniany</div>
-            <p>Szczegółowy opis projektu here i co robiłem w projekcie tam.</p>
+            <p>
+              Projekt obejmował zaprojektowanie i wykonanie <a href="https://en.wikipedia.org/wiki/Stewart_platform">platformy Stewarta</a> oraz jej oprogramowaniu, aby spełniała założenia funkcjonalne.
+              Przede wszystkim platforma miała automatycznie utrzymywać stalową kulke w wyznaczonym punkcie na platformie, kompensując różnicę między pozycją docelową a rzeczywistą wychylając się w odpowiedni sposób. 
+              Pomiar rzeczywistej pozycji stalowej kulki realizowany był za pomocą panelu rezystancyjnego, a rolę aktuatorów powodujących ruch platformy odgrywały serwomechanizmy sterowane za pomocą mikrokontrolera STM32.
+              Wybór pozycji docelowej odbywa się za pomocą aplikacji Android, która za pomocą Bluetooth łączyła się z mikrokontrolerem i wydawała wysokopoziomowe polecenia. Zadaniem mikrokontrolera było obliczenie odpowiedniego profilu prędkości
+              poszczególnych silników tak, aby kula znalazła się w rządanym punkie i ten punkt utrzymywała mimo zakłóceń.
+              Projekt realizowany był grupowo i podzielony na trzy zasadnicze części: modelowanie i tworzenie części mechanicznej, modelowanie matematyczne zjawiska toczenia się kuli i implementacja sterowania na mikrokontrolerze oraz utworzenie
+              aplikacji mobilnej Android do obsługi platformy.
+
+            </p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">2017</span>
