@@ -8,8 +8,14 @@
 }
 
 /* Hide the images by default */
-.mySlides {
+.my-slides {
   display: none;
+  height: 20rem;
+}
+
+.slide-img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* Next & previous buttons */
