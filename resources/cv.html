@@ -79,18 +79,30 @@
         <p class="lead mb-5"> Swoją przygodę z programowaniem zacząłem w szkole średniej na lekcjach informatyki z
           nauczycielem, który zaszczepił we mnie do tego pasję. Z powodu zainteresowania także elektroniką i budową
           maszyn,
-          na studiach znalazłem się na kierunku mechatronika. Na studiach realizowane były grupowe projekty, w których
+          na studiach znalazłem się na kierunku mechatronika, który pozwalał rozwijać umiejętności we wszystkich tych dziedzinach.
+          Na studiach realizowane były grupowe projekty, w których
           byłem odpowiedzialny za oprogramowanie. Niestety na kierunku mechatronika nie było wiele przedmiotów
           związanych z programowaniem. Spowodowało to, że w czasie studiów większość wiedzy zgłębiałem samemu,
-          zaczynając od najniżej poziomowych zadań do tych najwyżej poziomowych (rozwinąć...). </p>
+          zaczynając od najniżej poziomowych zadań do tych najwyżej poziomowych. Zaczynałem od programowania
+          mikrokontrolerów Atmega w C, algorytmów obliczających kinematykę odwrotną manipulatorów, a skończyłem
+          na aplikacji Android w Java oraz Pokera Texas Hold'em w C# </p>
         <p> Po przyjściu na praktyki do firmy WASKO dostałem projekt polegający na Angularze. Dzięki temu poznałem nieco
-          front-end. Potem projekt w JavieFX, aplikacja na maszynę oraz logika binzesowa. </p>
+          front-end i dowiedziałem się co nieco o JavaScripcie. Moim zadaniem było napisanie aplikacji klienckiej
+          systemu zarządzania czasem pracy, co w praktyce oznaczało utworzenie lub wykorzystanie isniejących 
+          komponentów typu kalendarz, tabele itp.
+          Kolejnym projektem, w którym brałem udział, był startujący od zera projekt aplikacji 
+          desktopowej obsługującej urządzenie typu wpłatomat/wypłatomat. Moim zadaniem było utworzenie GUI 
+          aplikacji za pomocą JavaFX na podstawie projektu technicznego zaakceptowanego przez klienta. 
+          Później byłem także odpowiedzialny za implementowanie logiki binzesowej kolejnych funkcji aplikacji oraz
+          pisanie testów jednostkowych i integracyjnych. Jest to o tyle ważne, że nasze oprogramowanie.
+          odpowiedzialne jest za przeliczanie i księgowanie tysięcy banknotów przechodzących przez urządzenie. 
+          Projekt ten jest rozwijany do teraz. </p>
         <p> Jestem ambitnym, szybko uczącym się programistą, który czerpie przyjemność z poznawania nowych narzędzi i
-          bibliotek. Interesuje mnie wiedza potrzebna do tworzenia kompletnych aplikacji (full-stack) </p>
+          bibliotek. Interesuje mnie wiedza potrzebna do tworzenia kompletnych aplikacji (full-stack)... </p>
         <div class="social-icons">
-          <!-- <a href="#">
+          <a href="https://www.linkedin.com/in/tomasz-zwierzy%C5%84ski-614733194/">
               <i class="fab fa-linkedin-in"></i>
-            </a> -->
+            </a>
           <a href="https://github.com/tomasz0zwierzynski/">
             <i class="fab fa-github"></i>
           </a>
@@ -178,8 +190,19 @@
             <p>Projekt tworzony w ramach wolnego czasu z założenia miał być napisany w czystym JavaScripcie bez
               korzystania z popularnych frameworków frontendowych.
               Jedynymi zastosowanymi bibliotekami są jquery po stronie klienta oraz express.js po stronie serwera
-              działającego na node.js.</p>
-            <p></p>
+              działającego na node.js oraz LokiJS do prostej bazy danych w pamięci.</p>
+            <p>Jest to prosta gra przeglądarkowa polegająca na gromadzeniu zasobów naturanych:
+              drewna, gliny, żelaza oraz zboża. Są one produkowane przez odpowiadnie pola surowców, które mogą
+              być rozbudowane, aby zwiększyć ich produkcję na godzinę. W grze można rozbudowywać także budynki, które
+              służą, do przyspieszania rozbudowy pól surowców lub do powiększania maksymalnej ilości surowców, które
+              można przechowywać.
+            </p>
+            <p>
+              Gra ma zaimplementowane podstawowe mechanizmy takie jak leniwe obliczanie przyrostu surowców, 
+              mechanizm kolejki zdarzeń oraz ranking punktowy poszczególnych graczy. 
+              W przyszłości planuję wykorzystać istniejące mechanizmy, aby rozszerzyć grę o dodatkowe elementy, 
+              m.in. szkolenie jednostek wojskowych i walka, mapa świata gry oraz handel surowcami.
+            </p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">2019</span>
@@ -191,7 +214,24 @@
             <h3 class="mb-0">Implementacja algorytmów sterowania napędem SEW Eurodrive z wykorzystaniem kontrolera czasu
               rzeczywistego</h3>
             <div class="subheading mb-3">Praca Magisterska</div>
-            <p>Szczegółowy opis tej pracy i foty jakieś, scrollable gallery</p>
+            <p>Praca składała się z trzech zasadniczych części: skonfigurowanie i uruchomienie napędu składającego się z
+              silnika elektrycznego oraz przemiennika częstotliwości firmy SEW Eurodrive,
+              skonfigurowanie i uruchomienie kontrolera czasu rzeczywistego firmy National Instruments oraz
+              integracja tych dwóch układów w jeden całościowy.
+            </p>
+            <p>
+              Silnik elektryczny (jaki??)sterowany był przez przemiennik częstotliwości (jaki?), którego zadaniem była zamiana stałego prądu
+              zasilania na przemienny sygnał powodujący zmianę prędkości obrotowej silika. Inwerter komunikował się za pomocą
+              wyjść analogowych oraz binarnych z kontrolerem czasu rzeczywistego (jaki??), na którym program napisany za 
+              pomocą LabView, za pomocą kart wejść-wyjść. (FPGA). Kontroler czasu rzeczywistego z kolei komunikował się z
+              komputerem za pomocą protokołu sieciowego z programem LabView wykonywanym na komputerze, który stanowił interfejs użytkowanika.
+            </p>
+            <p>
+              Finalny układ pozwalał na sterowanie prędkością obrotową wału silnika elektrycznego za pomocą
+              komputera z uruchomionym programem utworzonym w LabView, także w czasie rzeczywistym. Możliwe było
+              także odczytywanie sygnałów z przemiennika częstotliwości, po pozwoliło na utworzenie panelu użytkowanika,
+              prezentującego prędkości obrotowe, wykresy itp.
+            </p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">2018</span>
@@ -281,7 +321,20 @@
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Intuicyjne sterowania manipulatorem robota mobilnego</h3>
             <div class="subheading mb-3">Praca Inżynierska</div>
-            <p>Jedna z pierwszych aplikacji desktopowych W Qtcie</p>
+            <p>
+              Celem pracy było umożliwienie sterowania modelem manipukatorem robota mobilnego w oprogramowaniu
+              do symulacji VREP za pomocą myszy 3d używanej w oprogramowaniu CAD. Utowrzony został dynamiczny model
+              manipulatora o 6 stopniach swobody, co umożliwiało jego końcówce osiągnięcie dowolnego punktu w
+              przestrzeni o dowolnej orientacji. Mysz 3d używana była do zadawania tego punktu docelowego, a
+              odpowiedni algorytm kinematyki odwrotnej obliczał położenie poszczególnych członów.
+              </p>
+              <p>
+                Aplikacja napisana została w C++ z wykorzystaniem biblioteki Qt. Dostępny był sterownik kontrolera
+                3d, który zwracał sygnały z urządzenia. Aplikacja uruchamiała symulację VREP i za pomocą
+                odpowiedniego API udostępnionego przez oprogramowanie VREP sterowała elementami symulacji, a
+                także odczytywała z niej dane, które pokazywała w formie wykresów.
+              </p>
+              <p>screen by sie przydal</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">2017</span>
@@ -413,7 +466,11 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
       <div class="my-auto">
         <h2 class="mb-5">Zainteresowania</h2>
-        <p class="mb-0"> W wolnym czasie zajmuję się muzyką, jestem perkusistą i gram w zespole funk-rockowym <a href="http://facebook.com/slinkwood" target="_blank">Slinkwood</a> na perkusji. </p>
+        <p>W wolnym czasie interesuję się fizyką teoretyczną, a w szczególności kosmologią, choć ostatnio
+          zainteresowała mnie bardziej przyziemna i mniej ścisła dziedzina: ekonomia.  
+        </p>
+        <p class="mb-0"> Moim hobby jest także muzyka, gram w zespole funk-rockowym <a href="http://facebook.com/slinkwood" target="_blank">Slinkwood</a>
+           na perkusji. </p>
         <p> </p>
       </div>
     </section>
