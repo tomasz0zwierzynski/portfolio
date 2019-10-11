@@ -93,6 +93,11 @@
   text-align: justify;
 }
 
+.custom-logo {
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
