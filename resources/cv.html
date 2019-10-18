@@ -206,13 +206,13 @@
           </div>
         </div>
 
-        <p class="text-justify">Projekt tworzony w ramach wolnego czasu z założenia miał być napisany w czystym JavaScripcie bez
+        <p class="text-justify">Projekt tworzony w ramach wolnego czasu, który z założenia miał być napisany w czystym JavaScripcie bez
           korzystania z popularnych frameworków frontendowych.
-          Jedynymi zastosowanymi bibliotekami są jquery po stronie klienta oraz express.js po stronie serwera
-          działającego na node.js oraz LokiJS do prostej bazy danych w pamięci.</p>
+          Jedynymi zastosowanymi bibliotekami są jQuery po stronie klienta, express.js po stronie serwera
+          działającego na nodeJS oraz LokiJS do prostej bazy danych w pamięci.</p>
         <p class="text-justify">Jest to prosta gra przeglądarkowa polegająca na gromadzeniu zasobów naturanych:
-          drewna, gliny, żelaza oraz zboża. Są one produkowane przez odpowiadnie pola surowców, które mogą
-          być rozbudowane, aby zwiększyć ich produkcję na godzinę. W grze można rozbudowywać także budynki, które
+          drewna, gliny, żelaza oraz zboża. Są one generowane przez odpowiadnie pola surowców, które mogą zostać rozbudowane, 
+          co powoduje zwiększenie ich produkcji na godzinę. W grze można rozbudowywać także budynki, które
           służą, do przyspieszania rozbudowy pól surowców lub do powiększania maksymalnej ilości surowców, które
           można przechowywać.
         </p>
@@ -220,7 +220,7 @@
           Gra ma zaimplementowane podstawowe mechanizmy takie jak leniwe obliczanie przyrostu surowców, 
           mechanizm kolejki zdarzeń oraz ranking punktowy poszczególnych graczy. 
           W przyszłości planuję wykorzystać istniejące mechanizmy, aby rozszerzyć grę o dodatkowe elementy, 
-          m.in. szkolenie jednostek wojskowych i walka, mapa świata gry oraz handel surowcami.
+          m.in. szkolenie jednostek wojskowych i walka między graczami, umieszczanie osad na mapie świata gry oraz handel surowcami.
         </p>
 
         <div class="resume-item d-flex flex-column flex-md-row mb-2">
@@ -235,23 +235,24 @@
           </div>
         </div>
 
-        <p class="text-justify">Praca składała się z trzech zasadniczych części: skonfigurowanie i uruchomienie napędu składającego się z
-          silnika elektrycznego oraz przemiennika częstotliwości firmy SEW Eurodrive,
-          skonfigurowanie i uruchomienie kontrolera czasu rzeczywistego firmy National Instruments oraz
-          integracja tych dwóch układów w jeden całościowy.
+        <p class="text-justify">
+          Realizacja praca magisterskiej składała się z trzech zasadniczych części: skonfigurowania i uruchomienia napędu SEW Eurodrive,
+          skonfigurowania i uruchomienia kontrolera czasu rzeczywistego firmy National Instruments oraz
+          integracji tych dwóch układów w jeden całościowy i utworzenie algorytmów sterowania pozwalających kontrolować silnik elektryczny.
         </p>
         <p class="text-justify">
-          Silnik elektryczny (jaki??)sterowany był przez przemiennik częstotliwości (jaki?), którego zadaniem była zamiana stałego prądu
+          Silnik elektryczny DRS71S4 sterowany był przez przemiennik częstotliwości MDX61B, którego zadaniem była zamiana stałego prądu
           zasilania na przemienny sygnał powodujący zmianę prędkości obrotowej silika. Inwerter komunikował się za pomocą
-          wyjść analogowych oraz binarnych z kontrolerem czasu rzeczywistego (jaki??), na którym program napisany za 
-          pomocą LabView, za pomocą kart wejść-wyjść. (FPGA). Kontroler czasu rzeczywistego z kolei komunikował się z
+          wyjść analogowych oraz binarnych z kontrolerem czasu rzeczywistego CompactRIO, na którym program uruchomiony był program napisany za 
+          pomocą LabView. Dzięki zastosowaniu FPGA kontroler mógł generować także sygnał PWM wykorzystywany do regulowania prędkości.
+          Kontroler czasu rzeczywistego komunikował się z
           komputerem za pomocą protokołu sieciowego z programem LabView wykonywanym na komputerze, który stanowił interfejs użytkowanika.
         </p>
         <p class="text-justify mb-5">
           Finalny układ pozwalał na sterowanie prędkością obrotową wału silnika elektrycznego za pomocą
-          komputera z uruchomionym programem utworzonym w LabView, także w czasie rzeczywistym. Możliwe było
-          także odczytywanie sygnałów z przemiennika częstotliwości, po pozwoliło na utworzenie panelu użytkowanika,
-          prezentującego prędkości obrotowe, wykresy itp.
+          komputera w czasie rzeczywistym. Możliwe było
+          także odczytywanie pomiarów z przemiennika częstotliwości, które były prezentowane na wirtualnym panelu użytkowanika
+          w postaci kontroler i wykresów.
         </p>
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
@@ -314,18 +315,18 @@
 
         <p class="justify-text">
           Projekt obejmował zaprojektowanie i wykonanie <a href="https://en.wikipedia.org/wiki/Stewart_platform"
-            target="_blank">platformy Stewarta</a> oraz jej oprogramowaniu, aby spełniała założenia funkcjonalne.
-          Przede wszystkim platforma miała automatycznie utrzymywać stalową kulke w wyznaczonym punkcie na
+            target="_blank">platformy Stewarta</a> oraz jej oprogramowania, aby spełniała przyjęte założenia.
+          Przede wszystkim miała ona automatycznie utrzymywać stalową kulke w wyznaczonym punkcie na
           platformie, kompensując różnicę między pozycją docelową a rzeczywistą wychylając się w odpowiedni sposób.
           Pomiar rzeczywistej pozycji stalowej kulki realizowany był za pomocą panelu rezystancyjnego, a rolę
           aktuatorów powodujących ruch platformy odgrywały serwomechanizmy sterowane za pomocą mikrokontrolera
           STM32.
         </p>
         <p class="justify-text">
-          Wybór pozycji docelowej odbywa się za pomocą aplikacji Android, która za pomocą Bluetooth łączyła się z
+          Wybór pozycji docelowej odbywał się poprzez aplikację Android, która za pomocą Bluetooth łączyła się z
           mikrokontrolerem i wydawała wysokopoziomowe polecenia. Zadaniem mikrokontrolera było obliczenie
           odpowiedniego profilu prędkości
-          poszczególnych silników tak, aby kula znalazła się w rządanym punkie i ten punkt utrzymywała mimo
+          poszczególnych serwomechanizmów tak, aby kula znalazła się w żądanym punkie i utrzymywała ten punkt mimo
           zakłóceń.
         </p>
         <p class="justify-text mb-5">
@@ -334,12 +335,9 @@
           mikrokontrolerze oraz utworzenie
           aplikacji mobilnej Android do obsługi platformy. Osobiście zajmowałem się częścią trzecią i napisałem
           aplikację, za pomocą której można nie tylko wybrać punkt docelowy kulki, ale także sterować poszczególnymi
-          napędami oraz sterować w trybie
-          odwzorowania ruchu, w którym ruch telefonu odczytywany za pomocą akcelerometru jest przekładany na ruch
-          platformy w czasie rzeczywistym.
+          napędami z osobna oraz sterować w trybie
+          odwzorowania ruchu, który polegał na kopiowaniu ruchu telefonu przez platformę w czasie rzeczywistym.
         </p>
-
-
 
         <div class="resume-item d-flex flex-column flex-md-row mb-2">
           <div class="resume-content mr-auto">
@@ -353,18 +351,18 @@
         </div>
 
         <p class="text-justify">
-          Celem pracy było umożliwienie sterowania modelem manipukatorem robota mobilnego w oprogramowaniu
+          Celem pracy było umożliwienie sterowania modelem manipulatora robota mobilnego w oprogramowaniu
           do symulacji VREP za pomocą myszy 3d używanej w oprogramowaniu CAD. Utowrzony został dynamiczny model
-          manipulatora o 6 stopniach swobody, co umożliwiało jego końcówce osiągnięcie dowolnego punktu w
+          manipulatora o 6 stopniach swobody, co umożliwiało jego chwytakowi osiągnięcie dowolnego punktu w
           przestrzeni o dowolnej orientacji. Mysz 3d używana była do zadawania tego punktu docelowego, a
           odpowiedni algorytm kinematyki odwrotnej obliczał położenie poszczególnych członów.
-          </p>
-          <p class="text-justify">
-            Aplikacja napisana została w C++ z wykorzystaniem biblioteki Qt. Dostępny był sterownik kontrolera
-            3d, który zwracał sygnały z urządzenia. Aplikacja uruchamiała symulację VREP i za pomocą
-            odpowiedniego API udostępnionego przez oprogramowanie VREP sterowała elementami symulacji, a
-            także odczytywała z niej dane, które pokazywała w formie wykresów.
-          </p>
+        </p>
+        <p class="text-justify">
+          Aplikacja napisana została w C++ z wykorzystaniem biblioteki Qt. Dostępny był sterownik kontrolera
+          3d, który zwracał położenie poszczególnych osi urządzenia. Aplikacja uruchamiała symulację VREP i za pomocą
+          odpowiedniego API sterowała elementami symulacji, a
+          także odczytywała z niej dane, które pokazywała w formie wykresów.
+        </p>
           
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="slideshow-container">
@@ -590,14 +588,16 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
       <div class="my-auto">
         <h2 class="mb-5">Zainteresowania</h2>
-        <p class="mb-0">
-          Od czasów szkolnych moim głównym hobby jest muzyka rockowa oraz gra na perkusji. Jestem członkiem miejscowego zespołu funk-rockowego <a href="http://facebook.com/slinkwood" target="_blank">Slinkwood</a>
-          z którym okazjonalnie nagrywam utwory i koncertuje. Zespół, opócz mnie grającego na bębnach, składa się z basisty, klawiszowca oraz gitarzysto-wokalisty. Inspiracją dla naszej muzyki stanowią tacy
-          wykonawcy jak Jeff Beck, Led Zeppelin czy Deep Purple.
+        <p class="justify-text">
+          Od czasów szkolnych moim głównym hobby jest muzyka rockowa oraz gra na perkusji. Jestem członkiem miejscowego zespołu funk-rockowego <a href="http://facebook.com/slinkwood" target="_blank">Slinkwood</a>,
+          z którym okazjonalnie nagrywam utwory i koncertuje. Zespół, opócz mnie grającego na bębnach, składa się także z basisty, klawiszowca oraz gitarzysto-wokalisty. Inspiracją dla naszej muzyki stanowią tacy
+          wykonawcy jak Jeff Beck, Led Zeppelin czy Deep Purple. W najbliższym czasie planujemy wydać album Ignition, który dostępny będzie do odsłuchania na serwisach streamingowych.
+          <a class="stretched-link" href="https://www.youtube.com/channel/UCFY9UIiCSDdy09W4y1QqSaA" target="_blank">Link do YouTube</a>
         </p>
-        <a class="stretched-link" href="https://www.youtube.com/channel/UCFY9UIiCSDdy09W4y1QqSaA" target="_blank">Link do YouTube</a>
-        <p>
-          Interesuję się także techniką, matematyką, fizyką teoretyczną, w szczególności kosmologią, oraz ekonomią. W wolnym czasię lubię oglądać tematyczne kanały na youtubie (podać) traktujące o tych tematach.
+        
+        <p class="justify-text">
+          Interesuję się także techniką, matematyką, fizyką teoretyczną, w szczególności kosmologią, oraz ekonomią. W wolnym wyszukuję i oglądam tematyczne kanały na youtubie traktujące o tych tematach.
+          Hasła godne wyszukania na yt: PBS Space Time, Uwaga Naukowy Bełkot, V-Sauce, TED talks, Adam Neely, 3 Blue 1 Brown, Na Gałęzi, Mathlogger, Trading Session Jam, Theme Park Crazy
         </p>
       </div>
     </section>
