@@ -232,44 +232,10 @@
         <h2 class="mb-5">Projekty front-endowe</h2>
 
         <!-- ANGULAR.HTML -->
-        <div class="resume-item d-flex flex-column flex-md-row mb-2" id="angular">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">System zarządzania czasem pracy</h3>
-          <div class="subheading mb-3">Angular 4 + Bootstrap</div>
-        </div>
-
-        <div class="resume-date text-md-right">
-          <span class="text-primary">Sierpień 2018 - Grudzień 2018</span>
-        </div>
-</div>
-
-      <p class="text-justify"> System zarządzania czasem pracy zaprojektowany został z podziałem na kilka modułów. Oprócz standardowych umożliwiających zarządzanie 
-        pracownikami, grupami pracowników oraz konfiguracją, planowane były moduły do tworzenia harmonogramów pracy zmianowej, składania wniosków urlopowych oraz rozliczania godzin pracy.
-        Kolejnym modułem była kontrola dostępu i kontrola czasu pracy.
-        Był to wewnętrzny projekt w firmie, którego istniały już wcześniejsze wersje napisane w poprzedniej technologii (AngularJS) i miała zostać przepisana w nowym Angularze.
-      </p>
-
-      <p class="text-justify"> W momencie dołaćzenia do projektu nie istaniał back-end, więc bazowałem na json-server 
-
-          Zadania które wykonywałem polegały na tworzeniu komponentów do uzupełniania arkusza godzinowego, modyfikowania szablonów godzinowych, definiowania dni wolnych
-          Polegały na 
-          </p>
-   
-      <p class="text-justify">           </p>
+        {{angular.html}}
 
         <!-- KONS.HTML -->
-        <div class="resume-item d-flex flex-column flex-md-row mb-2" id="kons">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Interfejs aplikacji na urządzenie typu wpłatomat-wypłatomat</h3>
-          <div class="subheading mb-3">Java 8 + JavaFX</div>
-          <a class="js-scroll-trigger stretched-link" href="#java">Link do opisu aplikacji</a>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">Sierpień 2018 - Grudzień 2018</span>
-        </div>
-</div>
-      <p class="text-justify"> Interfejs aplikacji został utworzony jako osobny moduł z zastosowaniem biblioteki JavaFX </p>
-
+        {{kons.html}}
 
       </div>
 
@@ -280,129 +246,19 @@
         <h2 class="mb-5">Projekty back-endowe</h2>
           
         <!-- JAVA.HTML -->
-        <div class="resume-item d-flex flex-column flex-md-row mb-2" id="java">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Aplikacja na urządzenia typu wpłatomat-wypłatomat</h3>
-          <div class="subheading mb-3">Java 8</div>
-        </div>
-
-        <div class="resume-date text-md-right">
-          <span class="text-primary">Styczeń 2019 - Marzec 2020</span>
-        </div>
-      </div>
-      <p class="text-justify"> Firma zamawiająca oprogramowanie posiada maszynę składającą się z sejfu, urządzeń do przyjmowania oraz wyplacania monet i banknotów
-        a także komputer PC z systemem Windows 10 oraz dodatkowym ekranem wbudowanym w maszynę. Projekt obejmował utworzenie oprogramowania desktopowego obsługujące
-        urządzenia, transakcje za pomocą urządzeń oraz komunikacje z użytkowniem za pomoca interfejsu graficznego. 
-       </p>
-
-<p>
-Celem urządzeń były duże sklepy sieciowe, które automatyzują proces rozliczania kasjerów, którzy po skończeniu zmiany wsypują utarg do liczarek banknotów, przed zmianą pobierają do kasteki tzw. starter,
-aby mieć możliwość wypłaty reszty od samego początku zmiany. Maszyna automatycznie rozlicza kasjerów i wysyła komunikuje się z systemem centralnym, który jest zintegrowany z systemami bankowymi.
-</p>
-
-<p> 
-Oprogramowanie zostało podzielone na kilka modłów. Zostało napisane w Javie 8.
-</p>
-
-<p>
-Brałem udział w procesie projektowania aplikcaji od samego początku ... 
-</p>
-
-chuj chuj
+        {{java.html}}
 
         <!-- SLA.HTML -->
-        <div class="resume-item d-flex flex-column flex-md-row mb-2" id="sla">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Program testujący aplikację kliencką systemu zarządzania ruchem</h3>
-          <div class="subheading mb-3">Java 8</div>
-        </div>
-
-        <div class="resume-date text-md-right">
-          <span class="text-primary">Październik 2019 - Grudzień 2019</span>
-        </div>
-      </div>
-      <p class="text-justify"> Projekt automatyzacji zarządzania ruchem składającym się z wielu podsystemów. 
-        
-        Zadaniem programu było regularne testowanie aplikacji klienckiej systemu do zarządzania ruchem do SLA </p>
-        
+        {{sla.html}}        
 
         <!-- MODELER.HTML -->
-        <div class="resume-item d-flex flex-column flex-md-row mb-2" id="modeler">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Moduł generowania dokumentacji NEDAPS Modeler</h3>
-          <div class="subheading mb-3">Java 11 + SpringBoot</div>
-          <a class="stretched-link" href="https://nedaps.com/" target="_blank">Link do opisu platformy</a>
-        
-        </div>
-
-        <div class="resume-date text-md-right">
-          <span class="text-primary">Styczeń 2020 - Marzec 2020</span>
-        </div>
-      </div>
-      <p class="text-justify"> Dostosowywanie platformy automatyzującej procesy biznesowe NEDAPS do wymagań klienta wymagało utworzenia dużej ilości schematów w graficznym środowisku platformy.
-      Konieczne było utworzenie modułu, który zautomatyzuje proces tworzenia atrakcyjnej dla użytkownika dokumentacji poszczególnych schematów, na podstawie której można było przeanalizować jej działanie.  
-      </p>
-
-      <p> Moim zadaniem było utworzenie modułu, który udostępniał metodę do generowania i zwracania dokumentacji w formacie html, która wyzwalana była z aplikacji klienckiej.
-        Źródłem danych była nie SQLowa baza danych (Mongo), która przechowywała informację o każdym elemencie schematu takie jak zmienne wejściowe i wyjściowe, parametry oraz opisy.
-        Został utworzony szablon dokumentu z wykorzystaniem biblioteki Freemarker umożliwiającej podstawianie wartości podczas wykonywania kodu.
-        Następnie za pomocą biblioteki Asciidoctor tworzony był ładnie wyglądający dokument html.
-      </p>            
+        {{modeler.html}}            
 
         <!-- WEBSERVICE.HTML -->
-        <div class="resume-item d-flex flex-column flex-md-row mb-2" id="webservice">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Webservice rozszerzający możliwości Serwera Identyfikacji </h3>
-          <div class="subheading mb-3">Java 11 + SpringBoot</div>
-        </div>
-
-        <div class="resume-date text-md-right">
-          <span class="text-primary">Kwiecień 2020 - Maj 2020</span>
-        </div>
-      </div>
-      <p class="text-justify"> Wykorzystywany w pewnym projekcie darmowy serwer identyfikacji nie posiadał funkcji czasowego przydzielania uprawnień użytkownikom (delegacje).
-        Serwer udostępniał REST API do przydzielania i odbierania uprawnień oraz wszystkich innych operacji na użytkownikach i rolach. Powstała aplikacja GUI do obsługi
-        serwera z dodatkowymi funkcjami definiowania delegacji do którego trzeba było napisać webservice.
-      </p>
-
-      <p class="text-justify">
-        Aplikacja składała się z kontrolera udostępniającego metody do zarządzania delegacjami i modułu wykonującego delegacje za pomocą REST API udostępnionego przez Serwera Identyfikacji.
-        Uwierzytelnienie zapytań do kontrolera było realizowane poprzez wywołanie uwierzytelnienia na Serwera Identyfikacji, dzięki czemu z punktu widzenia GUI zapytania do obu serwerów były jednolicie autoryzowane.
-        Moduł wykonujący delegacje cyklicznie co stały interwał sprawdzał delegacje i w zależności od statusu dodawał lub odbierał uprawnienia, autoryzując się za pomocą specjalnie utworzonego konta technicznego.
-      </p>
-
-<table class="table mb-5">
-<thead>
-  <th scope="col">Nazwa projektu</th>
-  <th scope="col">Ilość osób w zespole</th>
-  <th scope="col">Czas trwania projektu</th>
-  <th scope="col">Funkcja w projekcie</th>
-  <th scope="col">Słowa kluczowe</th>
-</thead>
-<tbody>
-  <tr>
-    <th scope="row">Webservice rozszerzający możliwości Serwera Identyfikacji</th>
-    <td>1</td>
-    <td>2 miesiące</td>
-    <td>Projektant, deweloper i tester</td>
-    <td>SpringBoot, Linux</td>
-  </tr>
-</tbody>
-</table>   
+        {{webservice.html}}   
 
         <!-- ESB.HTML -->
-        <div class="resume-item d-flex flex-column flex-md-row mb-2" id="esb">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Integracja systemów IT za pomocą szyny ESB</h3>
-          <div class="subheading mb-3">Java 8</div>
-        </div>
-
-        <div class="resume-date text-md-right">
-          <span class="text-primary">Czerwiec 2020 - Obecnie</span>
-        </div>
-      </div>
-      <p class="text-justify"> Projekt polegał na zintegrowaniu wielu aplikacji wywołujących na sobie metody REST  </p>
-  
+        {{esb.html}}  
         
 
       </div>
@@ -413,218 +269,16 @@ chuj chuj
         <h2 class="mb-5">Projekty niekomercyjne</h2>
 
         <!-- JSCRIPTIAN.HTML -->
-        <div class="resume-item d-flex flex-column flex-md-row mb-2">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">JScriptian - Gra przeglądarkowa </h3>
-          <div class="subheading mb-3">Projekt hobbistyczny</div>
-          <a class="stretched-link" href="http://jscriptian.unicloud.pl" target="_blank">Link do aplikacji</a>
-        
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">2019</span>
-        </div>
-      </div>
-
-      <p class="text-justify">Projekt tworzony w ramach wolnego czasu, który z założenia miał być napisany w czystym JavaScripcie bez
-        korzystania z popularnych frameworków frontendowych.
-        Jedynymi zastosowanymi bibliotekami są jQuery po stronie klienta, express.js po stronie serwera
-        działającego na nodeJS oraz LokiJS do prostej bazy danych w pamięci.</p>
-      <p class="text-justify">Jest to prosta gra przeglądarkowa polegająca na gromadzeniu zasobów naturanych:
-        drewna, gliny, żelaza oraz zboża. Są one generowane przez odpowiadnie pola surowców, które mogą zostać rozbudowane, 
-        co powoduje zwiększenie ich produkcji na godzinę. W grze można rozbudowywać także budynki, które
-        służą, do przyspieszania rozbudowy pól surowców lub do powiększania maksymalnej ilości surowców, które
-        można przechowywać.
-      </p>
-      <p class="text-justify mb-5">
-        Gra ma zaimplementowane podstawowe mechanizmy takie jak leniwe obliczanie przyrostu surowców, 
-        mechanizm kolejki zdarzeń oraz ranking punktowy poszczególnych graczy. 
-        W przyszłości planuję wykorzystać istniejące mechanizmy, aby rozszerzyć grę o dodatkowe elementy, 
-        m.in. szkolenie jednostek wojskowych i walka między graczami, umieszczanie osad na mapie świata gry oraz handel surowcami.
-      </p>  
+        {{jscriptian.html}}  
 
         <!-- SEW.HTML -->
-        <div class="resume-item d-flex flex-column flex-md-row mb-2">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Implementacja algorytmów sterowania napędem SEW Eurodrive z wykorzystaniem kontrolera czasu
-            rzeczywistego</h3>
-          <div class="subheading mb-3">Praca Magisterska</div>
-          
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">2018</span>
-        </div>
-      </div>
-
-      <p class="text-justify">
-        Realizacja praca magisterskiej składała się z trzech zasadniczych części: skonfigurowania i uruchomienia napędu SEW Eurodrive,
-        skonfigurowania i uruchomienia kontrolera czasu rzeczywistego firmy National Instruments oraz
-        integracji tych dwóch układów w jeden całościowy i utworzenie algorytmów sterowania pozwalających kontrolować silnik elektryczny.
-      </p>
-      <p class="text-justify">
-        Silnik elektryczny DRS71S4 sterowany był przez przemiennik częstotliwości MDX61B, którego zadaniem była zamiana stałego prądu
-        zasilania na przemienny sygnał powodujący zmianę prędkości obrotowej silika. Inwerter komunikował się za pomocą
-        wyjść analogowych oraz binarnych z kontrolerem czasu rzeczywistego CompactRIO, na którym program uruchomiony był program napisany za 
-        pomocą LabView. Dzięki zastosowaniu FPGA kontroler mógł generować także sygnał PWM wykorzystywany do regulowania prędkości.
-        Kontroler czasu rzeczywistego komunikował się z
-        komputerem za pomocą protokołu sieciowego z programem LabView wykonywanym na komputerze, który stanowił interfejs użytkowanika.
-      </p>
-      <p class="text-justify mb-5">
-        Finalny układ pozwalał na sterowanie prędkością obrotową wału silnika elektrycznego za pomocą
-        komputera w czasie rzeczywistym. Możliwe było
-        także odczytywanie pomiarów z przemiennika częstotliwości, które były prezentowane na wirtualnym panelu użytkowanika
-        w postaci kontroler i wykresów.
-      </p>
-
-      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-        <div class="slideshow-container">
-
-          <div class="my-slides fader">
-            <div class="numbertext text-secondary">1 / 4</div>
-            <img class="slide-img" src="img/thesis_1.jpg">
-            <div class="text text-secondary"></div>
-          </div>
-
-          <div class="my-slides fader">
-            <div class="numbertext text-secondary">2 / 4</div>
-            <img class="slide-img" src="img/thesis_2.jpg">
-            <div class="text text-secondary"></div>
-          </div>
-
-          <div class="my-slides fader">
-            <div class="numbertext text-secondary">3 / 4</div>
-            <img class="slide-img" src="img/thesis_3.jpg">
-            <div class="text text-secondary"></div>
-          </div>
-
-          <div class="my-slides fader">
-            <div class="numbertext text-secondary">4 / 4</div>
-            <img class="slide-img" src="img/thesis_4.jpg">
-            <div class="text text-secondary"></div>
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-
-      </div>          
+        {{sew.html}}          
 
         <!-- STEWART.HTML -->
-        <div class="resume-item d-flex flex-column flex-md-row mb-2" id="stewart">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Platforma Stewarta - Ball on Plate</h3>
-          <div class="subheading mb-3">Projekt uczelniany</div>
-  
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">2017</span>
-        </div>
-      </div>
-
-      <div class="d-flex justify-content-center mb-4">
-      <iframe  width="560" height="315" src="https://www.youtube.com/embed/h0PvDRa3NOI?rel=0" frameborder="0"
-      allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-
-      <p class="justify-text">
-        Projekt obejmował zaprojektowanie i wykonanie <a href="https://en.wikipedia.org/wiki/Stewart_platform"
-          target="_blank">platformy Stewarta</a> oraz jej oprogramowania, aby spełniała przyjęte założenia.
-        Przede wszystkim miała ona automatycznie utrzymywać stalową kulke w wyznaczonym punkcie na
-        platformie, kompensując różnicę między pozycją docelową a rzeczywistą wychylając się w odpowiedni sposób.
-        Pomiar rzeczywistej pozycji stalowej kulki realizowany był za pomocą panelu rezystancyjnego, a rolę
-        aktuatorów powodujących ruch platformy odgrywały serwomechanizmy sterowane za pomocą mikrokontrolera
-        STM32.
-      </p>
-      <p class="justify-text">
-        Wybór pozycji docelowej odbywał się poprzez aplikację Android, która za pomocą Bluetooth łączyła się z
-        mikrokontrolerem i wydawała wysokopoziomowe polecenia. Zadaniem mikrokontrolera było obliczenie
-        odpowiedniego profilu prędkości
-        poszczególnych serwomechanizmów tak, aby kula znalazła się w żądanym punkie i utrzymywała ten punkt mimo
-        zakłóceń.
-      </p>
-      <p class="justify-text mb-5">
-        Projekt realizowany był grupowo i podzielony na trzy zasadnicze części: modelowanie i tworzenie części
-        mechanicznej, modelowanie matematyczne zjawiska toczenia się kuli i implementacja sterowania na
-        mikrokontrolerze oraz utworzenie
-        aplikacji mobilnej Android do obsługi platformy. Osobiście zajmowałem się częścią trzecią i napisałem
-        aplikację, za pomocą której można nie tylko wybrać punkt docelowy kulki, ale także sterować poszczególnymi
-        napędami z osobna oraz sterować w trybie
-        odwzorowania ruchu, który polegał na kopiowaniu ruchu telefonu przez platformę w czasie rzeczywistym.
-      </p>            
+        {{stewart.html}}            
 
         <!-- INTUITIVE.HTML -->
-        <div class="resume-item d-flex flex-column flex-md-row mb-2">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Intuicyjne sterowania manipulatorem robota mobilnego</h3>
-          <div class="subheading mb-3">Praca Inżynierska</div>
-    
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">2017</span>
-        </div>
-      </div>
-
-      <p class="text-justify">
-        Celem pracy było umożliwienie sterowania modelem manipulatora robota mobilnego w oprogramowaniu
-        do symulacji VREP za pomocą myszy 3d używanej w oprogramowaniu CAD. Utowrzony został dynamiczny model
-        manipulatora o 6 stopniach swobody, co umożliwiało jego chwytakowi osiągnięcie dowolnego punktu w
-        przestrzeni o dowolnej orientacji. Mysz 3d używana była do zadawania tego punktu docelowego, a
-        odpowiedni algorytm kinematyki odwrotnej obliczał położenie poszczególnych członów.
-      </p>
-      <p class="text-justify">
-        Aplikacja napisana została w C++ z wykorzystaniem biblioteki Qt. Dostępny był sterownik kontrolera
-        3d, który zwracał położenie poszczególnych osi urządzenia. Aplikacja uruchamiała symulację VREP i za pomocą
-        odpowiedniego API sterowała elementami symulacji, a
-        także odczytywała z niej dane, które pokazywała w formie wykresów.
-      </p>
-        
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="slideshow-container">
-  
-              <div class="my-slides-0 fader">
-                <div class="numbertext text-secondary">1 / 4</div>
-                <img class="slide-img" src="img/thesis_10.jpg">
-                <div class="text text-secondary"></div>
-              </div>
-  
-              <div class="my-slides-0 fader">
-                <div class="numbertext text-secondary">2 / 4</div>
-                <img class="slide-img" src="img/thesis_20.jpg">
-                <div class="text text-secondary"></div>
-              </div>
-  
-              <div class="my-slides-0 fader">
-                <div class="numbertext text-secondary">3 / 4</div>
-                <img class="slide-img" src="img/thesis_30.jpg">
-                <div class="text text-secondary"></div>
-              </div>
-  
-              <div class="my-slides-0 fader">
-                <div class="numbertext text-secondary">4 / 4</div>
-                <img class="slide-img" src="img/thesis_40.jpg">
-                <div class="text text-secondary"></div>
-              </div>
-  
-              <!-- Next and previous buttons -->
-              <a class="prev" onclick="plusSlides0(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides0(1)">&#10095;</a>
-            </div>
-  
-            <div style="text-align:center">
-              <span class="dot-0" onclick="currentSlide0(1)"></span>
-              <span class="dot-0" onclick="currentSlide0(2)"></span>
-              <span class="dot-0" onclick="currentSlide0(3)"></span>
-              <span class="dot-0" onclick="currentSlide0(4)"></span>
-            </div>
-  
-          </div> 
+        {{intuitive.html}} 
 
       </div>
     </section>

@@ -1,0 +1,39 @@
+<div class="resume-item d-flex flex-column flex-md-row mb-2" id="webservice">
+        <div class="resume-content mr-auto">
+          <h3 class="mb-0">Webservice rozszerzający możliwości Serwera Identyfikacji </h3>
+          <div class="subheading mb-3">Java 11 + SpringBoot</div>
+        </div>
+
+        <div class="resume-date text-md-right">
+          <span class="text-primary">Kwiecień 2020 - Maj 2020</span>
+        </div>
+      </div>
+      <p class="text-justify"> Wykorzystywany w pewnym projekcie darmowy serwer identyfikacji nie posiadał funkcji czasowego przydzielania uprawnień użytkownikom (delegacje).
+        Serwer udostępniał REST API do przydzielania i odbierania uprawnień oraz wszystkich innych operacji na użytkownikach i rolach. Powstała aplikacja GUI do obsługi
+        serwera z dodatkowymi funkcjami definiowania delegacji do którego trzeba było napisać webservice.
+      </p>
+
+      <p class="text-justify">
+        Aplikacja składała się z kontrolera udostępniającego metody do zarządzania delegacjami i modułu wykonującego delegacje za pomocą REST API udostępnionego przez Serwera Identyfikacji.
+        Uwierzytelnienie zapytań do kontrolera było realizowane poprzez wywołanie uwierzytelnienia na Serwera Identyfikacji, dzięki czemu z punktu widzenia GUI zapytania do obu serwerów były jednolicie autoryzowane.
+        Moduł wykonujący delegacje cyklicznie co stały interwał sprawdzał delegacje i w zależności od statusu dodawał lub odbierał uprawnienia, autoryzując się za pomocą specjalnie utworzonego konta technicznego.
+      </p>
+
+<table class="table mb-5">
+<thead>
+  <th scope="col">Nazwa projektu</th>
+  <th scope="col">Ilość osób w zespole</th>
+  <th scope="col">Czas trwania projektu</th>
+  <th scope="col">Funkcja w projekcie</th>
+  <th scope="col">Słowa kluczowe</th>
+</thead>
+<tbody>
+  <tr>
+    <th scope="row">Webservice rozszerzający możliwości Serwera Identyfikacji</th>
+    <td>1</td>
+    <td>2 miesiące</td>
+    <td>Projektant, deweloper i tester</td>
+    <td>SpringBoot, Linux</td>
+  </tr>
+</tbody>
+</table>

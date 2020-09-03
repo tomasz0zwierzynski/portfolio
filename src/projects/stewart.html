@@ -1,0 +1,41 @@
+<div class="resume-item d-flex flex-column flex-md-row mb-2" id="stewart">
+        <div class="resume-content mr-auto">
+          <h3 class="mb-0">Platforma Stewarta - Ball on Plate</h3>
+          <div class="subheading mb-3">Projekt uczelniany</div>
+  
+        </div>
+        <div class="resume-date text-md-right">
+          <span class="text-primary">2017</span>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mb-4">
+      <iframe  width="560" height="315" src="https://www.youtube.com/embed/h0PvDRa3NOI?rel=0" frameborder="0"
+      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+
+      <p class="justify-text">
+        Projekt obejmował zaprojektowanie i wykonanie <a href="https://en.wikipedia.org/wiki/Stewart_platform"
+          target="_blank">platformy Stewarta</a> oraz jej oprogramowania, aby spełniała przyjęte założenia.
+        Przede wszystkim miała ona automatycznie utrzymywać stalową kulke w wyznaczonym punkcie na
+        platformie, kompensując różnicę między pozycją docelową a rzeczywistą wychylając się w odpowiedni sposób.
+        Pomiar rzeczywistej pozycji stalowej kulki realizowany był za pomocą panelu rezystancyjnego, a rolę
+        aktuatorów powodujących ruch platformy odgrywały serwomechanizmy sterowane za pomocą mikrokontrolera
+        STM32.
+      </p>
+      <p class="justify-text">
+        Wybór pozycji docelowej odbywał się poprzez aplikację Android, która za pomocą Bluetooth łączyła się z
+        mikrokontrolerem i wydawała wysokopoziomowe polecenia. Zadaniem mikrokontrolera było obliczenie
+        odpowiedniego profilu prędkości
+        poszczególnych serwomechanizmów tak, aby kula znalazła się w żądanym punkie i utrzymywała ten punkt mimo
+        zakłóceń.
+      </p>
+      <p class="justify-text mb-5">
+        Projekt realizowany był grupowo i podzielony na trzy zasadnicze części: modelowanie i tworzenie części
+        mechanicznej, modelowanie matematyczne zjawiska toczenia się kuli i implementacja sterowania na
+        mikrokontrolerze oraz utworzenie
+        aplikacji mobilnej Android do obsługi platformy. Osobiście zajmowałem się częścią trzecią i napisałem
+        aplikację, za pomocą której można nie tylko wybrać punkt docelowy kulki, ale także sterować poszczególnymi
+        napędami z osobna oraz sterować w trybie
+        odwzorowania ruchu, który polegał na kopiowaniu ruchu telefonu przez platformę w czasie rzeczywistym.
+      </p>
