@@ -1,13 +1,40 @@
 <div class="resume-item d-flex flex-column flex-md-row mb-2" id="sla">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Program testujący aplikację kliencką systemu zarządzania ruchem</h3>
-          <div class="subheading mb-3">Java 8</div>
-        </div>
+  <div class="resume-content mr-auto">
+    <h3 class="mb-0">Program testujący aplikację kliencką systemu zarządzania ruchem</h3>
+    <div class="subheading mb-3">Java 8</div>
+  </div>
 
-        <div class="resume-date text-md-right">
-          <span class="text-primary">Październik 2019 - Grudzień 2019</span>
-        </div>
-      </div>
-      <p class="text-justify"> Projekt automatyzacji zarządzania ruchem składającym się z wielu podsystemów. 
-        
-        Zadaniem programu było regularne testowanie aplikacji klienckiej systemu do zarządzania ruchem do SLA </p>
+  <div class="resume-date text-md-right">
+    <span class="text-primary">Październik 2019 - Grudzień 2019</span>
+  </div>
+</div>
+<p class="text-justify">Istniejący projekt automatyzacji zarządzania ruchem składający się z wielu podsystemów, wymagał istnienia monitorowania działania
+  wielu aplikacji klienckich z punktu widzenia użytkownika, ze względu na warunki SLA. Wybrano rozwiązanie polegające na cyklicznym uruchamianiu aplikacji,
+  która automatycznie przechodzi zdefiniowane ścieżki w aplikacji klienckiej takie jak logowanie, wczytanie odpowiedniej tabeli, przechodzenie do ustawień itp.
+  Takie cykliczne pomiary dostępności miały być następnie zapisywane do bazy danych InfluxDB.
+</p>
+
+<p class="text-justify">
+  W tym celu napisano aplikację Java z wykorzystaniem Selenium - narzędzia automatyzującego przeglądarkę oraz sterownik przeglądarki chrome. Utworzyłem mechanizm,
+  który umożliwia wykonanie dowolnej sekwencji kroków zdefiniowanych w pliku json. Aplikacja uruchamiana jest cyklicznie za pomocą Crona w systemie Linux, wykonuje pomiar i
+  zapisuje próbkę w skonfigurowanej bazie danych.
+</p>
+
+<table class="table mb-5">
+  <thead>
+    <th scope="col">Nazwa projektu</th>
+    <th scope="col">Ilość osób w zespole</th>
+    <th scope="col">Czas trwania projektu</th>
+    <th scope="col">Funkcja w projekcie</th>
+    <th scope="col">Słowa kluczowe</th>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Program testujący aplikację kliencką systemu zarządzania ruchem</th>
+      <td>1</td>
+      <td>2 miesięcy</td>
+      <td>Projektowanie i tworzenie kody, testowanie, wdrażanie</td>
+      <td>Selenium, InfluxDB, Gradle, IntelliJ, Chrome Driver, Cron</td>
+    </tr>
+  </tbody>
+</table>

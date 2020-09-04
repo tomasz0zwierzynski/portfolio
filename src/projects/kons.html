@@ -1,11 +1,44 @@
 <div class="resume-item d-flex flex-column flex-md-row mb-2" id="kons">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Interfejs aplikacji na urządzenie typu wpłatomat-wypłatomat</h3>
-          <div class="subheading mb-3">Java 8 + JavaFX</div>
-          <a class="js-scroll-trigger stretched-link" href="#java">Link do opisu aplikacji</a>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">Sierpień 2018 - Grudzień 2018</span>
-        </div>
+  <div class="resume-content mr-auto">
+    <h3 class="mb-0">Interfejs aplikacji na urządzenie typu wpłatomat-wypłatomat</h3>
+    <div class="subheading mb-3">Java 8 + JavaFX</div>
+    <a class="js-scroll-trigger stretched-link" href="#java">Link do opisu aplikacji</a>
+  </div>
+  <div class="resume-date text-md-right">
+    <span class="text-primary">Styczeń 2019 - Marzec 2020</span>
+  </div>
 </div>
-      <p class="text-justify"> Interfejs aplikacji został utworzony jako osobny moduł z zastosowaniem biblioteki JavaFX </p>
+
+<p class="text-justify">
+  Ekran dotykowy urządzenia miał za zadanie wyświetlać kilka widoków takich jak widok logowania, menu główne i poszczególne
+  widoki zależne od wybranego przez użytkownika procesu. Przechodzenie między ekranami powiązane było z przechodzeniem między
+  stanami maszyny stanów, w której zdefiniowane były możliwe procesy - każdy stan miał przyporządkowany odpowiadający sobie
+  widok. Każdy widok składał się z górnego paska statusu, widocznej lub nie klawiatury ekranowej oraz szablonu. Interfejs
+  aplikacji został utworzony z zastosowaniem biblioteki JavaFX, więc każdy szablon był zdefiniowany w pliku FXML oraz posiadał
+  odpowiadający mu kontroler będący klasą Java. Styl został zdefiniowany w pliku css.
+</p>
+
+<p class="text-justify">
+  Głównym zadaniem było połączenie stanu z odpowiadającym mu widokiem. Aby rozwiązać to zadanie, powstały kontrolery stanu,
+  które odpowiadały za pobieranie danych ze stanu do wyświetlenia dla użytkownika oraz za przekazywanie danych od użytkownika
+  do stanu. W praktyce powstał schemat, który przypomina architekturę MVVC.
+</p>
+
+<table class="table mb-5">
+  <thead>
+    <th scope="col">Nazwa projektu</th>
+    <th scope="col">Ilość osób w zespole</th>
+    <th scope="col">Czas trwania projektu</th>
+    <th scope="col">Funkcja w projekcie</th>
+    <th scope="col">Słowa kluczowe</th>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Aplikacja kliencka systemu zarządzania czasem pracy</th>
+      <td>5</td>
+      <td>15 miesięcy</td>
+      <td>Projektowanie GUI, projektowanie i tworzenie kodu, testowanie</td>
+      <td>Java 8, JavaFX, MVVC, CSS</td>
+    </tr>
+  </tbody>
+</table>
