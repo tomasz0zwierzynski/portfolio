@@ -11,13 +11,13 @@
 </div>
 <p class="text-justify"> Dostosowywanie platformy automatyzującej procesy biznesowe NEDAPS do wymagań klienta wymagało utworzenia dużej ilości schematów
   w graficznym środowisku platformy. Konieczne było utworzenie modułu, który zautomatyzuje proces tworzenia atrakcyjnej dla
-  użytkownika dokumentacji poszczególnych schematów, na podstawie której można było przeanalizować jej działanie.
+  użytkownika dokumentacji poszczególnych schematów, na podstawie której można było przeanalizować ich działanie.
 </p>
 
 <p class="text-justify"> Moim zadaniem było utworzenie modułu, który udostępniał metodę HTTP do generowania i zwracania dokumentacji w formacie html, która
   wyzwalana była z aplikacji klienckiej. Źródłem danych była nie-SQLowa baza danych, która przechowywała informację o każdym
-  elemencie schematu taką jak: zmienne wejściowe i wyjściowe, parametry oraz opis. Został utworzony szablon dokumentu z
-  wykorzystaniem biblioteki Freemarker umożliwiającej podstawianie wartości podczas wykonywania kodu. Następnie za pomocą
+  elemencie schematu: zmienne wejściowe i wyjściowe, parametry oraz opis. Został utworzony template dokumentu z
+  wykorzystaniem biblioteki Freemarker, która umożliwiała definiowane szablonów, a następnie za pomocą
   biblioteki Asciidoctor tworzony był dokument html, który był wysyłany do klienta.
 </p>
 

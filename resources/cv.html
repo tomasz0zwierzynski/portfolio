@@ -255,8 +255,8 @@
 </div>
 
 <p class="text-justify">
-  Istniejący, wewnętrzny system kontroli dostępu i pomiaru czasu pracy miał zostać przepisany od samego początku w nowych technologiach.
-  W przypadku aplikacji klienckiej było to przejście z AngularJS na Angular 4. Aplikacja kliencka docelowo miała umożliwiać
+  Istniejący, wewnętrzny system kontroli dostępu i pomiaru czasu pracy miał zostać przepisany od początku z zastosowaniem nowych technologii.
+  W przypadku aplikacji klienckiej było to przejście z AngularJS na Angular 4. Aplikacja kliencka miała docelowo umożliwiać
   realizowanie, w zależności od roli użytownika, takich zadań jak zarządzanie pracownikami i grupami pracowników, składanie
   wniosków urlopowych, tworzenie harmonogramów pracy zmianowej, rozliczanie godzin pracy itp.
 </p>
@@ -266,7 +266,7 @@
   na podstawie pliku json. Pierwszym zadaniem było przygotowanie projektu układu aplikacji i podzieleniu aplikacji na moduły,
   do których dostęp uzależniony jest od roli zalogowanego użytkownika. Zdecydowałem się na zastosowanie prostego podejścia
   - dołączenie biblioteki css bootstrap. Jednym z zadań było także zaprojektowanie REST API do pobierania obiektów pracowników
-  i grup, które zostało zrealizowane w Swagerze.
+  i grup, które zostało wykonane przeze mnie w Swagerze.
 </p>
 
 <p class="text-justify">
@@ -282,7 +282,7 @@
   dzienny składał się z interaktywnego obszaru roboczego, na którym w osi poziomej znajdował się czas, a w poszczególnych
   rzędach znajdowały się paski reprezentujące kolejne dni lub kolejnych pracowników (w zależności od trybu). Paski można
   było przesuwać lub rozciągać, aby ustawiać godziny, a cały obszar roboczy można było dostosowywać - zbliżać, oddalać i
-  zmieniać skalę. Widok miesięczy złożony był z komórek reprezentujących pojedynczy dzień dla danego pracownika i mógł być
+  zmieniać skalę czasu. Widok miesięczy złożony był z komórek reprezentujących pojedynczy dzień dla danego pracownika i mógł być
   edytowany zbiorczo - tak jak komórki w oprogramowaniu do obsługi arkusza kalkulacyjnego.
 </p>
 
@@ -326,39 +326,39 @@
 </div>
 
 <p class="text-justify">
-  Ekran dotykowy urządzenia miał za zadanie wyświetlać kilka widoków takich jak widok logowania, menu główne i poszczególne
-  widoki zależne od wybranego przez użytkownika procesu. Przechodzenie między ekranami powiązane było z przechodzeniem między
-  stanami maszyny stanów, w której zdefiniowane były możliwe procesy - każdy stan miał przyporządkowany odpowiadający sobie
-  widok. Każdy widok składał się z górnego paska statusu, widocznej lub nie klawiatury ekranowej oraz szablonu. Interfejs
-  aplikacji został utworzony z zastosowaniem biblioteki JavaFX, więc każdy szablon był zdefiniowany w pliku FXML oraz posiadał
-  odpowiadający mu kontroler będący klasą Java. Styl został zdefiniowany w pliku css.
+  Ekran dotykowy urządzenia miał za zadanie wyświetlać m.in. ekran logowania, menu główne i poszczególne widoki zależne od
+  wybranego przez użytkownika procesu. Przechodzenie między ekranami powiązane było z przechodzeniem między stanami maszyny
+  stanów. Każdy stan miał przyporządkowany odpowiadający mu widok, a każdy widok składał się z górnego paska statusu, widocznej
+  lub nie klawiatury ekranowej oraz szablonu. Interfejs aplikacji został utworzony z zastosowaniem biblioteki JavaFX, więc
+  każdy szablon był zdefiniowany w pliku FXML oraz posiadał odpowiadający mu kontroler będący klasą w Javie.
 </p>
 
 <p class="text-justify">
-  Głównym zadaniem było połączenie stanu z odpowiadającym mu widokiem. Aby rozwiązać to zadanie, powstały kontrolery stanu,
-  które odpowiadały za pobieranie danych ze stanu do wyświetlenia dla użytkownika oraz za przekazywanie danych od użytkownika
-  do stanu. W praktyce powstał schemat, który przypomina architekturę MVVC.
+  Oprócz samego projektowania i implementowania wyglądu ekranów, głównym zadaniem było utworzenie architektury działania gui,
+  łączącego stan maszyny z odpowiadającym mu widokiem. Rozwiązałem to wprowadzając kontrolery stanu, które odpowiadały za
+  komunikację między widokiem a stanem. Komunikacja została oparta na synchronizowanych zdarzeniach i umożliwiała obustronne
+  przekazywanie danych. W praktyce była to architektura, która przypominała architekturę MVVC.
 </p>
 
 <div class="table-responsive-md">
-<table class="table table-sm mb-5">
-  <thead>
-    <th scope="col">Nazwa projektu</th>
-    <th scope="col">Ilość osób w zespole</th>
-    <th scope="col">Czas trwania projektu</th>
-    <th scope="col">Funkcja w projekcie</th>
-    <th scope="col">Słowa kluczowe</th>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Aplikacja kliencka systemu zarządzania czasem pracy</th>
-      <td>5</td>
-      <td>15 miesięcy</td>
-      <td>Projektowanie GUI, projektowanie i tworzenie kodu, testowanie</td>
-      <td>Java 8, JavaFX, MVVC, CSS</td>
-    </tr>
-  </tbody>
-</table>
+  <table class="table table-sm mb-5">
+    <thead>
+      <th scope="col">Nazwa projektu</th>
+      <th scope="col">Ilość osób w zespole</th>
+      <th scope="col">Czas trwania projektu</th>
+      <th scope="col">Funkcja w projekcie</th>
+      <th scope="col">Słowa kluczowe</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Interfejs aplikacji na urządzenie typu wpłatomat-wypłatomat</th>
+        <td>5</td>
+        <td>15 miesięcy</td>
+        <td>Projektowanie GUI, projektowanie i tworzenie kodu, testowanie</td>
+        <td>Java 8, JavaFX, MVVC, CSS, FXML, SceneBuilder </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
     </div>
@@ -374,21 +374,23 @@
   <div class="resume-content mr-auto">
     <h3 class="mb-0">Aplikacja na urządzenia typu wpłatomat-wypłatomat</h3>
     <div class="subheading mb-3">Java 8</div>
+    <a class="js-scroll-trigger stretched-link" href="#kons">Link do opisu gui</a>
   </div>
 
   <div class="resume-date text-md-right">
     <span class="text-primary">Styczeń 2019 - Marzec 2020</span>
   </div>
 </div>
-<p class="text-justify"> Firma zamawiająca oprogramowanie posiada maszynę składającą się z sejfu, urządzeń do przyjmowania oraz wyplacania monet i
-  banknotów, a także komputer PC z systemem Windows 10 oraz wbudowanym ekranem dotykowym. Projekt obejmował utworzenie oprogramowania
-  desktopowego obsługujące urządzenia, transakcje pieniężne oraz komunikacje z użytkowniem za pomoca interfejsu graficznego.
+<p class="text-justify"> Przedsiębiorstwo zamawiająca oprogramowanie zajmowało się produkowaniem maszyn składających się z pancernego sejfu, różnego
+  rodzaju urządzeń do przyjmowania oraz wypłacania gotówki, komputera PC z systemem Windows 10 i wbudowanym ekranem dotykowym.
+  Projekt obejmował utworzenie oprogramowania desktopowego obsługującego urządzenia, transakcje pieniężne oraz komunikacje
+  z użytkowniem za pomoca interfejsu graficznego.
 </p>
 
-<p class="text-justify"> Cały produkt przeznaczony był dla dużych sieci handlowych, które zainteresowane są automatyzacją procesu rozliczania kasjerów
-  oraz obsługi transakcji bankowych. Użytkownikami aplikacji komunikują się za pomocą interfejsu graficznego z urządzeniem
+<p class="text-justify"> Cały produkt przeznaczony był dla dużych sieci handlowych, które zainteresowane były automatyzacją procesu rozliczania kasjerów
+  oraz obsługi transakcji bankowych. Użytkownikownicy aplikacji komunikują się za pomocą interfejsu graficznego z urządzeniem
   i wykonują różnego rodzaju zadania w zależności od roli. Np. kasjer deponuje utarg do automatycznej liczarki, konwojent
-  wymienia zasobniki z banknotami czy też kierownik wypłaca zdeponowane monety. Urządzenie komunikuje się z systemem centralnym
+  wymienia zasobniki z banknotami, czy kierownik wypłaca zdeponowane monety. Urządzenie komunikuje się z systemem centralnym
   przekazując informacje o transakcjach, zdarzeniach i stanach pojemników, a zewnętrzny system centralny zintegrowany jest
   z systemem bankowym i logistycznym.
 </p>
@@ -397,46 +399,45 @@
   Główne aspekty tworzenia oprogramowania na potrzeby tego projektu to: komunikacja z urządzeniami liczącymi i wydającymi gotówkę,
   projekt i utworzenie interjesu graficznego, rejestrowanie zdarzeń w systemie, przetwarzanie transakcji pieniężnych oraz
   bezpieczeństwo systemu. Projekt w założeniu miał być mały, krótki i eksperymentalny, ale duża ilość chętnych na produkt
-  końcowy spowodował, że z czasem rozrusł się o kolejne urządzenia, wersje, wdrożenia i oczywiście miesiące. Zdecydowaliśmy
-  się na sprawdzoną Javę 8 SE.
+  końcowy spowodował, że z czasem rozrusł się o kolejne urządzenia, wersje, wdrożenia i oczywiście miesiące. Podczas dobierania
+  technologii zdecydowano się na sprawdzoną Javę 8 SE.
 </p>
 
 <p class="text-justify">
-  Z powodu początkowej, małej ilości czasu, dysponowaliśmy jako programiści, jedynie ogólną architekturą aplikacji. Każdego
-  dnia na bieżąco uzganialiśmy jej szczegóły między sobą, tworząc dokumentację w kodzie. Aplikacja została podzielona na
-  kilka modułów:
+  Z powodu początkowej, małej ilości czasu, dysponowaliśmy jedynie ogólną architekturą aplikacji. Każdego dnia na bieżąco uzganialiśmy
+  jej szczegóły między sobą, tworząc dokumentację w kodzie. Aplikacja została podzielona na kilka modułów:
   <a class="js-scroll-trigger stretched-link" href="#kons">interfejs graficzny aplikacji</a>, api sterowników urządzeń, implementacja sterowników urządzeń, maszyna stanów oraz serwisy.
-  W początkowej fazie projektu byłem odpowiedzialny za tworzenie interfejsu graficznego, a w późniejszej, kiedy interfejsu
-  już wiele się nie zmieniał - brałem zaangażowany w tworzenie także innych modułów.
+  W początkowej fazie projektu byłem odpowiedzialny za tworzenie interfejsu graficznego, a w późniejszej, kiedy interfejs
+  już wiele się nie zmieniał - brałem udział w rozwijanie innych modułów.
 </p>
 
 <p class="text-justify">
   Dużym atutem było uczestnictwo w projekcie od samego początku, wśród doświadczonych programistów, którzy wskazywali często
   poprawną ścieżkę rozwiązania danego problemu. Jednocześnie miałem dużą swobodę w stosowaniu rozwiązań architektonicznych
   ze względu na brak szczegółowej dokumentacji technicznej. Oprócz tworzenia interfejsu graficznego, realizowałem takie zadania
-  jak: tworzenie procesów (ścieżek) wykonywanych przez użytkownika, tworzenie modułu aktualizacji automatycznej aplikacji,
-  tworzenie testów integracyjnych, tworzenie zapytań bazy danych, budowanie kolejnych wersji i tworzenie dokumentacji.
+  jak: tworzenie procesów (ścieżek) wykonywanych przez użytkownika, tworzenie modułu automatycznej aktualizacji aplikacji,
+  tworzenie testów jednostkowych i integracyjnych, tworzenie zapytań do bazy danych, budowanie wersji i tworzenie dokumentacji.
 </p>
 
 <div class="table-responsive-md">
-<table class="table table-sm mb-5">
-  <thead>
-    <th scope="col">Nazwa projektu</th>--
-    <th scope="col">Ilość osób w zespole</th>
-    <th scope="col">Czas trwania projektu</th>
-    <th scope="col">Funkcja w projekcie</th>
-    <th scope="col">Słowa kluczowe</th>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Aplikacja kliencka systemu zarządzania czasem pracy</th>
-      <td>5</td>
-      <td>15 miesięcy</td>
-      <td>Projektowanie i tworzenie kodu, testowanie, tworzenie dokumentacji, wdrażanie</td>
-      <td>Hibernate, PostgreSQL, RestTemplate, Java 8, Maven, Stream API, Jenkins</td>
-    </tr>
-  </tbody>
-</table>
+  <table class="table table-sm mb-5">
+    <thead>
+      <th scope="col">Nazwa projektu</th>--
+      <th scope="col">Ilość osób w zespole</th>
+      <th scope="col">Czas trwania projektu</th>
+      <th scope="col">Funkcja w projekcie</th>
+      <th scope="col">Słowa kluczowe</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Aplikacja kliencka systemu zarządzania czasem pracy</th>
+        <td>5</td>
+        <td>15 miesięcy</td>
+        <td>Projektowanie i tworzenie kodu, testowanie, tworzenie dokumentacji, wdrażanie</td>
+        <td>Hibernate, PostgreSQL, RestTemplate, Java 8, Maven, Stream API, Jenkins</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
       <!-- SLA.HTML -->
@@ -450,16 +451,16 @@
     <span class="text-primary">Październik 2019 - Grudzień 2019</span>
   </div>
 </div>
-<p class="text-justify">Istniejący projekt automatyzacji zarządzania ruchem składający się z wielu podsystemów, wymagał istnienia monitorowania działania
-  wielu aplikacji klienckich z punktu widzenia użytkownika, ze względu na warunki SLA. Wybrano rozwiązanie polegające na cyklicznym uruchamianiu aplikacji,
-  która automatycznie przechodzi zdefiniowane ścieżki w aplikacji klienckiej takie jak logowanie, wczytanie odpowiedniej tabeli, przechodzenie do ustawień itp.
+<p class="text-justify">Istniejący projekt automatyzacji zarządzania ruchem składał się z wielu podsystemów i wymagał monitorowania dostępności
+  kilku internetowych aplikacji klienckich. Zdecydowano się na rozwiązanie polegające na cyklicznym uruchamianiu aplikacji,
+  która automatycznie przechodzi zdefiniowane ścieżki w aplikacji takie jak logowanie, wczytanie odpowiedniej tabeli, przechodzenie do ustawień itp.
   Takie cykliczne pomiary dostępności miały być następnie zapisywane do bazy danych InfluxDB.
 </p>
 
 <p class="text-justify">
-  W tym celu napisano aplikację Java z wykorzystaniem Selenium - narzędzia automatyzującego przeglądarkę oraz sterownik przeglądarki chrome. Utworzyłem mechanizm,
+  W tym celu napisano aplikację Java z wykorzystaniem biblioteki Selenium - narzędzia automatyzującego przeglądarkę. Utworzyłem mechanizm,
   który umożliwia wykonanie dowolnej sekwencji kroków zdefiniowanych w pliku json. Aplikacja uruchamiana jest cyklicznie za pomocą Crona w systemie Linux, wykonuje pomiar i
-  zapisuje próbkę w skonfigurowanej bazie danych.
+  zapisuje próbkę w skonfigurowanej bazie danych. Aplikacja była na tyle prosta, że została napisana w czystej Javie SE.
 </p>
 
 <div class="table-responsive-md">
@@ -477,7 +478,7 @@
       <td>1</td>
       <td>2 miesięcy</td>
       <td>Projektowanie i tworzenie kody, testowanie, wdrażanie</td>
-      <td>Selenium, InfluxDB, Gradle, IntelliJ, Chrome Driver, Cron</td>
+      <td>Selenium, InfluxDB, Gradle, IntelliJ, Chrome Driver, Cron, GSON</td>
     </tr>
   </tbody>
 </table>
@@ -497,13 +498,13 @@
 </div>
 <p class="text-justify"> Dostosowywanie platformy automatyzującej procesy biznesowe NEDAPS do wymagań klienta wymagało utworzenia dużej ilości schematów
   w graficznym środowisku platformy. Konieczne było utworzenie modułu, który zautomatyzuje proces tworzenia atrakcyjnej dla
-  użytkownika dokumentacji poszczególnych schematów, na podstawie której można było przeanalizować jej działanie.
+  użytkownika dokumentacji poszczególnych schematów, na podstawie której można było przeanalizować ich działanie.
 </p>
 
 <p class="text-justify"> Moim zadaniem było utworzenie modułu, który udostępniał metodę HTTP do generowania i zwracania dokumentacji w formacie html, która
   wyzwalana była z aplikacji klienckiej. Źródłem danych była nie-SQLowa baza danych, która przechowywała informację o każdym
-  elemencie schematu taką jak: zmienne wejściowe i wyjściowe, parametry oraz opis. Został utworzony szablon dokumentu z
-  wykorzystaniem biblioteki Freemarker umożliwiającej podstawianie wartości podczas wykonywania kodu. Następnie za pomocą
+  elemencie schematu: zmienne wejściowe i wyjściowe, parametry oraz opis. Został utworzony template dokumentu z
+  wykorzystaniem biblioteki Freemarker, która umożliwiała definiowane szablonów, a następnie za pomocą
   biblioteki Asciidoctor tworzony był dokument html, który był wysyłany do klienta.
 </p>
 
@@ -540,8 +541,8 @@
         </div>
       </div>
       <p class="text-justify"> Wykorzystywany w pewnym projekcie darmowy serwer identyfikacji nie posiadał funkcji czasowego przydzielania uprawnień użytkownikom (delegacje).
-        Serwer udostępniał REST API do przydzielania i odbierania uprawnień oraz wszystkich innych operacji na użytkownikach i rolach. Powstała aplikacja GUI do obsługi
-        serwera z dodatkowymi funkcjami definiowania delegacji do którego trzeba było napisać webservice.
+        Serwer udostępniał jedynie REST API do przydzielania i odbierania uprawnień. Powstała aplikacja GUI do obsługi
+        serwera, które zawierało dodatkowe funkcje definiowania delegacji do którego trzeba było napisać webservice.
       </p>
 
       <p class="text-justify">
@@ -565,7 +566,7 @@
     <td>1</td>
     <td>2 miesiące</td>
     <td>Projektowanie i tworzenie kodu, testowanie, wdrażanie i tworzenie dokumentacji</td>
-    <td>SpringBoot, Linux</td>
+    <td>Java 11, Hibernate, Spring Boot, Linux</td>
   </tr>
 </tbody>
 </table>
@@ -583,16 +584,16 @@
   </div>
 </div>
 <p class="text-justify">
-  Projekt dotyczy zintegrowaniu ze sobą wielu aplikacji, systemów i baz danych ze sobą. Przyczyną konieczności integracji jest
-  konieczność przejścia ze starszych systemów na nowsze, mające większe możliwości automatyzacji procesów realizowanych przez
+  Projekt dotyczy zintegrowania ze sobą wielu aplikacji, systemów i baz danych ze sobą. Przyczyną konieczności integracji jest
+  przejście ze starszych systemów na nowsze, mające większe możliwości automatyzacji procesów realizowanych przez
   klienta. Oprócz dostarczenia nowego, gotowego rozwiązania, wymagane jest także przeprowadzenie migracji dużej ilości danych,
   co w założeniu wymaga równoległego funkcjonowania wszystkich systemów. Do zrealizowania integracji wykorzystana została
   szyna danych WSO2.
 </p>
 
 <p class="text-justify">
-  Zadania związane były z rozpoznawaniem API integrowanych systemów oraz tworzeniem sekwencji obsługujących poszczególne metody
-  HTTP, tworzeniem API szyny danych na podstawie dokumentacji projektowej, pisanem custom mediatorów w Javie. Szyna oprócz
+  Zadania związane były z rozpoznawaniem API integrowanych systemów i tworzeniem sekwencji obsługujących poszczególne metody
+  HTTP, tworzeniem API szyny danych na podstawie dokumentacji projektowej oraz pisanem custom mediatorów w Javie. Szyna oprócz
   przetwarzania komunikatów, miała za zadanie wykonywać cyklicznie inne zadania polegające na wywoływaniu zapytań do bazy
   danych.
 </p>

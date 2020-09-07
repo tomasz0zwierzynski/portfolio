@@ -8,16 +8,16 @@
     <span class="text-primary">Październik 2019 - Grudzień 2019</span>
   </div>
 </div>
-<p class="text-justify">Istniejący projekt automatyzacji zarządzania ruchem składający się z wielu podsystemów, wymagał istnienia monitorowania działania
-  wielu aplikacji klienckich z punktu widzenia użytkownika, ze względu na warunki SLA. Wybrano rozwiązanie polegające na cyklicznym uruchamianiu aplikacji,
-  która automatycznie przechodzi zdefiniowane ścieżki w aplikacji klienckiej takie jak logowanie, wczytanie odpowiedniej tabeli, przechodzenie do ustawień itp.
+<p class="text-justify">Istniejący projekt automatyzacji zarządzania ruchem składał się z wielu podsystemów i wymagał monitorowania dostępności
+  kilku internetowych aplikacji klienckich. Zdecydowano się na rozwiązanie polegające na cyklicznym uruchamianiu aplikacji,
+  która automatycznie przechodzi zdefiniowane ścieżki w aplikacji takie jak logowanie, wczytanie odpowiedniej tabeli, przechodzenie do ustawień itp.
   Takie cykliczne pomiary dostępności miały być następnie zapisywane do bazy danych InfluxDB.
 </p>
 
 <p class="text-justify">
-  W tym celu napisano aplikację Java z wykorzystaniem Selenium - narzędzia automatyzującego przeglądarkę oraz sterownik przeglądarki chrome. Utworzyłem mechanizm,
+  W tym celu napisano aplikację Java z wykorzystaniem biblioteki Selenium - narzędzia automatyzującego przeglądarkę. Utworzyłem mechanizm,
   który umożliwia wykonanie dowolnej sekwencji kroków zdefiniowanych w pliku json. Aplikacja uruchamiana jest cyklicznie za pomocą Crona w systemie Linux, wykonuje pomiar i
-  zapisuje próbkę w skonfigurowanej bazie danych.
+  zapisuje próbkę w skonfigurowanej bazie danych. Aplikacja była na tyle prosta, że została napisana w czystej Javie SE.
 </p>
 
 <div class="table-responsive-md">
@@ -35,7 +35,7 @@
       <td>1</td>
       <td>2 miesięcy</td>
       <td>Projektowanie i tworzenie kody, testowanie, wdrażanie</td>
-      <td>Selenium, InfluxDB, Gradle, IntelliJ, Chrome Driver, Cron</td>
+      <td>Selenium, InfluxDB, Gradle, IntelliJ, Chrome Driver, Cron, GSON</td>
     </tr>
   </tbody>
 </table>

@@ -10,37 +10,37 @@
 </div>
 
 <p class="text-justify">
-  Ekran dotykowy urządzenia miał za zadanie wyświetlać kilka widoków takich jak widok logowania, menu główne i poszczególne
-  widoki zależne od wybranego przez użytkownika procesu. Przechodzenie między ekranami powiązane było z przechodzeniem między
-  stanami maszyny stanów, w której zdefiniowane były możliwe procesy - każdy stan miał przyporządkowany odpowiadający sobie
-  widok. Każdy widok składał się z górnego paska statusu, widocznej lub nie klawiatury ekranowej oraz szablonu. Interfejs
-  aplikacji został utworzony z zastosowaniem biblioteki JavaFX, więc każdy szablon był zdefiniowany w pliku FXML oraz posiadał
-  odpowiadający mu kontroler będący klasą Java. Styl został zdefiniowany w pliku css.
+  Ekran dotykowy urządzenia miał za zadanie wyświetlać m.in. ekran logowania, menu główne i poszczególne widoki zależne od
+  wybranego przez użytkownika procesu. Przechodzenie między ekranami powiązane było z przechodzeniem między stanami maszyny
+  stanów. Każdy stan miał przyporządkowany odpowiadający mu widok, a każdy widok składał się z górnego paska statusu, widocznej
+  lub nie klawiatury ekranowej oraz szablonu. Interfejs aplikacji został utworzony z zastosowaniem biblioteki JavaFX, więc
+  każdy szablon był zdefiniowany w pliku FXML oraz posiadał odpowiadający mu kontroler będący klasą w Javie.
 </p>
 
 <p class="text-justify">
-  Głównym zadaniem było połączenie stanu z odpowiadającym mu widokiem. Aby rozwiązać to zadanie, powstały kontrolery stanu,
-  które odpowiadały za pobieranie danych ze stanu do wyświetlenia dla użytkownika oraz za przekazywanie danych od użytkownika
-  do stanu. W praktyce powstał schemat, który przypomina architekturę MVVC.
+  Oprócz samego projektowania i implementowania wyglądu ekranów, głównym zadaniem było utworzenie architektury działania gui,
+  łączącego stan maszyny z odpowiadającym mu widokiem. Rozwiązałem to wprowadzając kontrolery stanu, które odpowiadały za
+  komunikację między widokiem a stanem. Komunikacja została oparta na synchronizowanych zdarzeniach i umożliwiała obustronne
+  przekazywanie danych. W praktyce była to architektura, która przypominała architekturę MVVC.
 </p>
 
 <div class="table-responsive-md">
-<table class="table table-sm mb-5">
-  <thead>
-    <th scope="col">Nazwa projektu</th>
-    <th scope="col">Ilość osób w zespole</th>
-    <th scope="col">Czas trwania projektu</th>
-    <th scope="col">Funkcja w projekcie</th>
-    <th scope="col">Słowa kluczowe</th>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Aplikacja kliencka systemu zarządzania czasem pracy</th>
-      <td>5</td>
-      <td>15 miesięcy</td>
-      <td>Projektowanie GUI, projektowanie i tworzenie kodu, testowanie</td>
-      <td>Java 8, JavaFX, MVVC, CSS</td>
-    </tr>
-  </tbody>
-</table>
+  <table class="table table-sm mb-5">
+    <thead>
+      <th scope="col">Nazwa projektu</th>
+      <th scope="col">Ilość osób w zespole</th>
+      <th scope="col">Czas trwania projektu</th>
+      <th scope="col">Funkcja w projekcie</th>
+      <th scope="col">Słowa kluczowe</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Interfejs aplikacji na urządzenie typu wpłatomat-wypłatomat</th>
+        <td>5</td>
+        <td>15 miesięcy</td>
+        <td>Projektowanie GUI, projektowanie i tworzenie kodu, testowanie</td>
+        <td>Java 8, JavaFX, MVVC, CSS, FXML, SceneBuilder </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
